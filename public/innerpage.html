@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    
+<script src="https://cdn.tailwindcss.com"></script>
+    <script
+    src="https://kit.fontawesome.com/afa777e6cd.js"
+    crossorigin="anonymous"
+  ></script>
+    <!---iconic-icons-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="font-mont">
+    <!-------navbar------->
+    <div class="container mx-auto relative z-10 w-full">
+        <nav class=" xl:bg-inherit mx-auto pt-20 relative z-10 xl:flex items-center xl:justify-between ">
+         <div class="flex items-center justify-between">
+           <img class="w-52 md:w-40" src="./img/logo (1).png" alt="">
+          <span class="block xl:hidden">
+            
+            <ion-icon name="menu" class="text-6xl md:text-4xl" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+          
+          <div class="">
+            <ul class="xl:bg-inherit bg-white xl:flex z-[-1] top-[400px] transition-all ease-in duration-300 xl:opacity-100 opacity-0 xl:z-auto xl:static absolute  gap-14 items-center w-full left-0">
+
+
+    <li class="flex xl:gap-12 md:gap-6 links items-center justify-center">
+
+  <a class="xl:text-2xl text-xl font-semibold z-10 text-bookmark-black xl:mr-5 mr-0"  href="index.html">Home 
+               
+    <i  class="fa-solid fa-angle-down ml-2"></i>
+    </a>
+   
+     <a class="xl:mr-5 mr-0 text-2xl font-semibold text-bookmark-black" href="shop.html">Shop</a>
+     
+    <a class="xl:mr-5 mr-0 text-2xl font-semibold  text-bookmark-black" href="#">logbook</a>
+     
+     <a class="xl:mr-5 mr-0 text-2xl font-semibold  text-bookmark-black" href="page.html">page</a>
+     
+   <a class=" text-2xl font-semibold  text-bookmark-black" href="#">content</a>
+    <span class="link"></span>
+</li>        
+            <a class="" href="#"><img class="w-6" src="./img/search-Vector.png" alt=""></a>
+           
+             <a class="relative" href=""><img class="w-6" src="./img/busket-Vector.png" alt="" ><div class="text-center absolute w-5 h-5 -top-4 left-3 bg-bookmark-blue rounded-full">2</div></a>
+            
+          <a href=""> <img class="w-6"  src="./img/Group 1.png" alt=""></a></a>
+           
+           </ul>
+          </div>
+        </nav>
+      </div>
+<!---------top-background-------->
+      <div class=" mt-12 relative">
+          <img class="w-full" src="./img/shop/image 1.png" alt="">
+          <div class="absolute top-30% left-48">
+              <h2 class="text-5xl font-semibold">Products</h2>
+              <div class="text-2xl font-semibold mt-10">Home <span class="p-1"> /</span> <span class="text-bookmark-blue">Shop</span>
+                 </div>
+          </div>
+      </div>
+
+    <!---new arivel part--> 
+ 
+     <div class="container mx-auto grid grid-cols-2 pt-64 pb-60  ">
+       <!--left part-->
+            <div class=" chair flex justify-center  relative ">
+              <!--chair pic-->
+                <img class=" chair relative bottom-24" src="./img/page/Chair - 800x1370 1 (1).png" alt="">
+                <!--chair pic-->
+                <div class="gap-6 flex absolute bottom-12 left-10">
+                  <div>
+                    <img class="h-10 cursor-pointer  " src="./img/page/Group 74.png" alt="">
+                  </div>
+                  <div>
+                    <img class="h-10 absolute cursor-pointer " src="./img/page/Group 73.png" alt="">
+                  </div>
+                </div>   
+         </div>
+         <!--right part-->
+         <div class="ml-32">
+          <div class="flex gap-5 text-4xl mb-10 text-bookmark-soft-blue">
+            <div>N</div>
+            <div>e</div>
+            <div class="mr-5">w</div>
+            <div>A</div>
+            <div>r</div>
+            <div>r</div>
+            <div>i</div>
+            <div>v</div>
+            <div>a</div>
+            <div>l</div>
+             </div>
+             <h1 class="text-9xl font-bold ">Comfort <br> Chair</h1>
+
+            <!--rating-->
+            <div class="flex items-center">
+
+              <div class="stars mt-16">
+
+                <div class="stars-ghost">
+
+                   <div class="star newStar" onmouseenter="stars(0)">
+                     <i class="fa fa-star"></i>
+                    </div>
+                   <div class="star  newStar" onmouseenter="stars(1)">
+                     <i class="fa fa-star"></i>
+                    </div>
+                   <div class="star  newStar" onmouseenter="stars(2)">
+                     <i class="fa fa-star"></i>
+                    </div>
+                   <div class="star  newStar" onmouseenter="stars(3)">
+                     <i class="fa fa-star"></i>
+                    </div>
+                   <div class="star  newStar" onmouseenter="stars(4)">
+                     <i class="fa fa-star"></i>
+                    </div>
+                   
+                </div>
+                <div class="star"><i class="fa fa-star-o"></i></div>
+                <div class="star"><i class="fa fa-star-o"></i></div>
+                <div class="star"><i class="fa fa-star-o"></i></div>
+                <div class="star"><i class="fa fa-star-o"></i></div>
+                <div class="star"><i class="fa fa-star-o"></i></div>
+                <div class="info hidden">Hover Stars</div>
+             </div>
+             <span id="rate-num" class=" text-3xl text-gray-500">4.5</span>
+             <div>  
+             </div>
+            </div>
+            <!--number counter-->
+            <div class="custom-number-input h-36 w-full flex justify-between mt-2">
+              <div>
+                <label class="text-3xl text-bookmark-blue" for="">Price</label>
+               <h2 class="mt-10 text-5xl text-gray-600 flex items-end"><span class="text-3xl ">$</span> 306.00</h2>
+               <p class="text-4xl mt-6 text-gray-500">+ Vat</span>
+              </div>
+              <div>
+            <label for="custom-input-number" class="w-full  font-semibold text-3xl text-bookmark-blue">Quantity
+              </label>
+            
+              <div class="flex mt-10 flex-row h-10 w-72 rounded-lg relative bg-transparent">
+            
+                <button data-action="decrement" class=" bg-gray-200 flex items-center justify-center text-gray-400 hover:text-gray-700 hover:bg-gray-400 h-14 w-14  cursor-pointer outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+                </button>
+            
+                <input type="number" class=" focus:outline-none text-center w-24 font-semibold text-4xl  hover:text-black focus:text-black  md:text-basecursor-default flex items-center justify-center h-14 text-gray-400  outline-none" name="custom-input-number" value="0"></input>
+              
+              <button data-action="increment" class="bg-gray-200 flex items-center justify-center text-gray-400 hover:text-gray-700 hover:bg-gray-400  h-14 w-14  [pppppp] cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+               
+              </button>
+              </div>
+            </div>
+            </div>
+            <!--text-->
+            <p class="mt-24 text-2xl text-gray-400 leading-10">Lorem ipsum dolor sit amet, consectetur  lorem adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alia.</p>
+            <!---button-->
+            <button class="w-full mt-16 bg-bookmark-soft-blue  h-24">
+              <a class="w-full text-3xl text-center text-white " href="">Add to cart</a>
+            </button>
+            
+
+     </div>
+
+   
+     </div>
+       <!-------------Footer-====-------->
+   <div class="bg-black relative"> 
+    <div class="w-full">
+      <div class="flex justify-center mb-10 ">
+        <img class=" mt-16" src="./img/logo.png" alt="">
+      </div>
+   
+      <div class="w-full block mb-16">
+         <nav class="mx-auto container relative z-10 flex items-center justify-center ">
+        
+          <div class="">
+            <ul class="hidden xl:flex relative gap-14 items-center">
+      
+              <a class="text-2xl font-bold z-10 text-bookmark-black"  href="#">Home 
+               
+             </a>
+             
+              <a class="text-2xl font-bold text-bookmark-black" href="#">Shop</a>
+             
+              <a class="text-2xl font-bold text-bookmark-black" href="#">logbook</a>
+              
+              <a class="text-2xl font-bold text-bookmark-black" href="#">page</a>
+            
+              <a class="text-2xl font-bold text-bookmark-black" href="#">content</a>
+              <div class="animation start-animation"></div>
+          
+           </ul>
+          </div>
+          <button class="block xl:hidden py-3  rounded focus:outline-none hover:bg-gray-200 group">
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+         
+          </button>
+        </nav>
+     </div> 
+      <div class="text-center pb-16">
+        <ul>
+          <a class="" href=""><i class="text-3xl hover:text-white fa-brands fa-facebook text-bookmark-new-gray mr-10"></i></a>
+          <a class=" " href=""><i class="text-3xl mr-10 hover:text-white fa-brands fa-twitter text-bookmark-new-gray "></i></a>
+          <a class=" " href=""><i class="text-3xl hover:text-white mr-10 fa-brands fa-youtube text-bookmark-new-gray "></i></a>
+          <a  href=""><i class="text-3xl hover:text-white mr-10 fa-brands fa-pinterest text-bookmark-new-gray "></i></a>
+        </ul>
+      </div>
+    </div> 
+     <div class="border-t text-center ">
+      <p class="text-white opacity-40 p-10 text-2xl">Copyright 2022 all right resarved</p>
+    </div>
+  <!-----top-to buttom-->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 text-white font-medium text-xs leading-tight uppercase   focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bottom-40 absolute right-16" id="btn-back-to-top">
+    <img class="w-12 " src="./img/top-bottom.png" alt="">
+    </button>
+  </div>
+
+  
+<!--jquery cdn--->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+ 
+      <script src="./script.js"></script>
+</body>
+</html>
+

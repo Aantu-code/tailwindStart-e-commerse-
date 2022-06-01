@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    
+    <!--select-->
+   <link rel="stylesheet" href=" https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <!--radio-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.3/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <script
+    src="https://kit.fontawesome.com/afa777e6cd.js"
+    crossorigin="anonymous"
+  ></script>
+    <!---iconic-icons-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="font-mont">
+    <!-------navbar------->
+    <div class="container mx-auto relative z-10 w-full">
+        <nav class=" xl:bg-inherit mx-auto pt-20 relative z-10 xl:flex items-center xl:justify-between ">
+         <div class="flex items-center justify-between">
+           <img class="w-52 md:w-40" src="./img/logo (1).png" alt="">
+          <span class="block xl:hidden">
+            
+            <ion-icon name="menu" class="text-6xl md:text-4xl" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+          
+          <div class="">
+            <ul class="xl:bg-inherit bg-white xl:flex z-[-1] top-[400px] transition-all ease-in duration-300 xl:opacity-100 opacity-0 xl:z-auto xl:static absolute  gap-14 items-center w-full left-0">
+
+
+    <div class="flex xl:gap-12 md:gap-6 links items-center justify-center">
+
+  <a class="xl:text-2xl text-xl font-semibold z-10 text-bookmark-black xl:mr-5 mr-0"  href="index.html">Home 
+               
+    <i  class="fa-solid fa-angle-down ml-2"></i>
+    </a>
+   
+     <a class="xl:mr-5 mr-0 text-2xl font-semibold text-bookmark-black" href="shop.html">Shop</a>
+     
+    <a class="xl:mr-5 mr-0 text-2xl font-semibold  text-bookmark-black" href="blog.html">Blog</a>
+     
+     <a class="xl:mr-5 mr-0 text-2xl font-semibold  text-bookmark-black" href="page.html">page</a>
+     
+   <a class=" text-2xl font-semibold  text-bookmark-black" href="contact.html">content</a>
+    <span class="link"></span>
+</div>        
+            <a class="" href="#"><img class="w-6" src="./img/search-Vector.png" alt=""></a>
+           
+             <a class="relative" href=""><img class="w-6" src="./img/busket-Vector.png" alt="" ><div class="text-center absolute w-5 h-5 -top-4 left-3 bg-bookmark-blue rounded-full">2</div></a>
+            
+          <a href=""> <img class="w-6"  src="./img/Group 1.png" alt=""></a></a>
+           
+           </ul>
+          </div>
+        </nav>
+      </div>
+<!---------top-background-------->
+      <div class=" mt-12 relative">
+          <img class="w-full" src="./img/shop/image 1.png" alt="">
+          <div class="absolute top-30% left-48">
+              <h2 class="text-5xl font-semibold">Products</h2>
+              <div class="text-2xl font-semibold mt-10">Home <span class="p-1"> /</span> <span class="text-bookmark-blue">Shop</span>
+                 </div>
+          </div>
+      </div>
+      <!-----SHOPPAGE-WRAPPER----->
+      <div class="container mx-auto grid grid-cols-3 gap-10 items-start pt-36">
+          <!--side-bar-->
+          <div class="col-span-1 ">      
+           <!--accordance-->
+           <div class=" w-full mx-auto mt-4">
+            <!---tab-1--->
+            <div class="overflow-hidden border-b border-slate-300">
+            <label>
+             
+              <input class="absolute opacity-0 peer" type="checkbox" name="new-1">
+              <p class="py-10 inline-block w-11/12 text-3xl last:cursor-pointer">Categories</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block peer-checked:rotate-45 peer-checked:text-indigo-500" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+              </svg>
+              <div class="flex bg-gray-50 max-h-0  peer-checked:max-h-screen items-center transition-all duration-1000">
+               <div class="block">
+            <div class="p-8">
+              <label class="flex justify-start items-start ">
+                <div class="bg-white border-2 rounded-md  border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:bg-bookmark-eight focus-within:border-black">
+                  <input type="checkbox" class="opacity-0 absolute "  name="new-2">
+                 
+                  <svg class="fill-current hidden relative -top-1 -right-1 overflow-visible w-10 h-8 text-black pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                </div>
+                <div class="select-none ml-5 text-2xl">Apple</div>
+              </label>
+              <label class="flex justify-start items-start mt-5 ">
+                <div class="bg-white border-2 rounded-md  border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:bg-bookmark-eight focus-within:border-black">
+                  <input type="checkbox" class="opacity-0 absolute "  name="new-3">
+                 
+                  <svg class="fill-current hidden relative -top-1 -right-1 overflow-visible w-10 h-8 text-black pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                </div>
+                <div class="select-none ml-5 text-2xl">Orrenge</div>
+              </label>
+              <style>
+                input:checked + svg {
+                  display: block;
+                }
+              </style>
+            </div>
+          </div>
+              </div>
+            </label>
+            </div>
+            
+            
+             <!---tab-2--->
+             <div class="overflow-hidden border-b border-slate-300">
+              <label>
+                <input class="absolute opacity-0 peer" type="checkbox"  name="new-4">
+                <p class="py-10 inline-block w-11/12 text-3xl last:cursor-pointer">Vendors</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block peer-checked:rotate-45 peer-checked:text-indigo-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                </svg>
+                <div class="flex bg-gray-50 max-h-0 peer-checked:max-h-screen transition-all duration-1000">
+                 <div class="block">
+             
+                <div class="p-8">
+                  <label class="flex justify-start items-start ">
+                    <div class="bg-white border-2 rounded-md  border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:bg-bookmark-eight focus-within:border-black">
+                      <input type="checkbox" class="opacity-0 absolute"  name="new-5">
+                     
+                      <svg class="fill-current hidden relative -top-1 -right-1 overflow-visible w-10 h-8 text-black pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                    </div>
+                    <div class="select-none ml-5 text-2xl">Apple</div>
+                  </label>
+                  <label class="flex justify-start items-start mt-5 ">
+                    <div class="bg-white border-2 rounded-md  border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:bg-bookmark-eight focus-within:border-black">
+                      <input type="checkbox" class="opacity-0 absolute "  name="new-6">
+                     
+                      <svg class="fill-current hidden relative -top-1 -right-1 overflow-visible w-10 h-8 text-black pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                    </div>
+                    <div class="select-none ml-5 text-2xl">Orrenge</div>
+                  </label>
+                  <style>
+                    input:checked + svg {
+                      display: block;
+                    }
+                  </style>
+                </div>
+                
+              
+            </div> 
+                </div>
+              </label>
+              </div>
+             <!---tab-3--->
+             <div class="overflow-hidden border-b border-slate-300">
+              <label>
+                <input class="absolute opacity-0 peer" type="checkbox"  name="new-7">
+                <p class="py-10 inline-block w-11/12 text-3xl last:cursor-pointer">Types</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block peer-checked:rotate-45 peer-checked:text-indigo-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                </svg>
+                <div class="flex bg-gray-50 max-h-0 peer-checked:max-h-screen transition-all duration-1000">
+                 <div class="block">
+              
+                <div class="p-8">
+                  <label class="flex justify-start items-start ">
+                    <div class="bg-white border-2 rounded-md  border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:bg-bookmark-eight focus-within:border-black">
+                      <input type="checkbox" class="opacity-0 absolute ">
+                     
+                      <svg class="fill-current hidden relative -top-1 -right-1 overflow-visible w-10 h-8 text-black pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                    </div>
+                    <div class="select-none ml-5 text-2xl">Apple</div>
+                  </label>
+                  <label class="flex justify-start items-start mt-5 ">
+                    <div class="bg-white border-2 rounded-md  border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:bg-bookmark-eight focus-within:border-black">
+                      <input type="checkbox" class="opacity-0 absolute ">
+                     
+                      <svg class="fill-current hidden relative -top-1 -right-1 overflow-visible w-10 h-8 text-black pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                    </div>
+                    <div class="select-none ml-5 text-2xl">Orrenge</div>
+                  </label>
+                  <style>
+                    input:checked + svg {
+                      display: block;
+                    }
+                  </style>
+                </div>
+            </div> 
+                </div>
+              </label>
+              </div>
+             <!---tab-4--->
+             <div class="overflow-hidden border-b border-slate-300">
+              <label>
+                <input class="absolute opacity-0 peer" type="checkbox"  name="new-8">
+                <p class="py-10 inline-block w-11/12 text-3xl last:cursor-pointer">Offers</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block peer-checked:rotate-45 peer-checked:text-indigo-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                </svg>
+                <div class="flex bg-gray-50 max-h-0 peer-checked:max-h-screen transition-all duration-1000">
+                 <div class="block">
+              <div class="p-8">
+              <label class="flex justify-start items-start ">
+                <div class="bg-white border-2 rounded-md  border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:bg-bookmark-eight focus-within:border-black">
+                  <input type="checkbox" class="opacity-0 absolute ">
+                 
+                  <svg class="fill-current hidden relative -top-1 -right-1 overflow-visible w-10 h-8 text-black pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                </div>
+                <div class="select-none ml-5 text-2xl">Apple</div>
+              </label>
+              <label class="flex justify-start items-start mt-5 ">
+                <div class="bg-white border-2 rounded-md  border-gray-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:bg-bookmark-eight focus-within:border-black">
+                  <input type="checkbox" class="opacity-0 absolute ">
+                 
+                  <svg class="fill-current hidden relative -top-1 -right-1 overflow-visible w-10 h-8 text-black pointer-events-none" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                </div>
+                <div class="select-none ml-5 text-2xl">Orrenge</div>
+              </label>
+              <style>
+                input:checked + svg {
+                  display: block;
+                }
+              </style>
+            </div>
+            </div>
+            
+  
+                </div>
+              </label>
+              </div>
+          </div>
+          
+
+              <div class=" flex flex-col justify-center py-10">
+                <div class="text-3xl font-semibold pb-6">Price Range                              </div>
+                <div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full">
+                  <div>
+                    <input type="range"
+                           step="100"
+                           x-bind:min="min" x-bind:max="max"
+                           x-on:input="mintrigger"
+                           x-model="minprice"
+                           class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+              
+                    <input type="range" 
+                           step="100"
+                           x-bind:min="min" x-bind:max="max"
+                           x-on:input="maxtrigger"
+                           x-model="maxprice"
+                           class="absolute pointer-events-none appearance-none z-20 h-2 w-full opacity-0 cursor-pointer">
+              
+                    <div class="relative z-10 h-1 mt-6">
+              
+                      <div class="absolute z-10 left-0 right-0 bottom-0 top-0 rounded-md bg-gray-200 "></div>
+              
+                      <div class="absolute z-20 top-0 bottom-0 rounded-md bg-black left-0 right-0" ></div>
+              
+                      <div class="absolute z-30 w-6 h-6 top-0 left-0 bg-black rounded-full -mt-3 -ml-1 " ></div>
+              
+                      <div class="absolute z-30 w-6 h-6 top-0 right-0 bg-black rounded-full -mt-3 -mr-3"></div>
+               
+                    </div>
+              
+                  </div>
+                  
+                  <div class="flex justify-center items-center py-5">
+                   <div class="mt-4">
+                     <h2 class="text-2xl font-semibold text-bookmark-new-gray">$200 - $18000</h2>
+                   </div>
+                  </div>
+                </div>
+              
+              <script>
+                  function range() {
+                      return {
+                        minprice: 1000, 
+                        maxprice: 7000,
+                        min: 100, 
+                        max: 10000,
+                        minthumb: 0,
+                        maxthumb: 0, 
+                        
+                        mintrigger() {   
+                          this.minprice = Math.min(this.minprice, this.maxprice - 500);      
+                          this.minthumb = ((this.minprice - this.min) / (this.max - this.min)) * 100;
+                        },
+                         
+                        maxtrigger() {
+                          this.maxprice = Math.max(this.maxprice, this.minprice + 500); 
+                          this.maxthumb = 100 - (((this.maxprice - this.min) / (this.max - this.min)) * 100);    
+                        }, 
+                      }
+                  }
+              </script>
+              </div>
+              <!--size-->
+              <div class=" flex flex-col justify-center">
+                <div class="text-3xl font-semibold pb-16">Size</div>
+               <div>
+                 <div class="pb-2 flex">
+                  <input type="radio"  name="radio-1" class="radio w-8 h-8 " checked />
+                  <div class=" ml-10"><h3 class="text-2xl text-gray-400">Small</h3></div>
+                 </div>
+                
+                <br>
+                <div class="pb-2 flex">
+                  <input type="radio"  name="radio-1" class="radio w-8 h-8 " checked />
+                  <div class=" ml-10"><h3 class="text-2xl text-gray-400">Medium</h3></div>
+                </div>
+               <br>
+               <div class="flex pb-4">
+                <input type="radio"  name="radio-1" class="radio w-8 h-8 " checked />
+                <div class=" ml-10"><h3 class="text-2xl text-gray-400">Large</h3></div>
+              </div>
+              
+               </div>
+              </div>
+              <!--color-->
+              <div class="text-3xl font-semibold pt-14 pb-16">Color</div>
+              <div class=" flex justify-start ">
+                
+               
+                 <div class="pr-6 ">
+                  <input type="radio"  name="radio-color" class="radio w-8 h-8 bg-rose-400 checked:bg-rose-400" checked />
+                 </div>
+                
+                <div class="pr-6">
+                  <input type="radio"  name="radio-color" class="radio w-8 h-8 bg-sky-500 checked:bg-sky-500" checked />
+                </div>
+              
+               <div class="pr-6">
+                <input type="radio"  name="radio-color" class="radio w-8 h-8 bg-bookmark-one checked:bg-bookmark-one " checked />
+              </div>
+              <div class="pr-6">
+                <input type="radio"  name="radio-color" class="radio w-8 h-8 bg-blue-500 checked:bg-blue-500 " checked />
+              </div>
+              <div class="pr-6">
+                <input type="radio"  name="radio-color" class="radio w-8 h-8 bg-bookmark-two checked:bg-bookmark-two" checked />
+              </div>
+              <div class="pr-6">
+                <input type="radio"  name="radio-color" class="radio w-8 h-8 bg-bookmark-three checked:bg-bookmark-three" checked />
+              </div>
+              </div>
+          </div>
+          <!--products-->
+          <div class="col-span-2">
+            <!--sorting-->
+            <div class=" flex justify-between">
+              <div class="flex gap-4 ml-10 items-center">
+               <div class="mt-10 flex show-columns" id="show-2-columns" data-columns="2">
+                <svg class="mt-4 cursor-pointer " width="32" height="12">
+                  <rect class="fill-gray-300 hover:fill-bookmark-soft-blue" width="12" height="12" stroke="" transform="translate(0, 0)"></rect>
+                  <rect class="fill-gray-300 hover:fill-bookmark-soft-blue" width="12" height="12" stroke="" transform="translate(20, 0)"></rect>
+              </svg>
+               </div>
+               <div class="mb-2 mt-12 mr-4 flex show-columns" id="show-3-columns" data-columns="3">
+                 
+                <svg class="mt-4 cursor-pointer " width="52" height="12">
+                  <rect class="fill-gray-300 hover:fill-bookmark-soft-blue" width="12" height="12" stroke="" transform="translate(0, 0)"></rect>
+                  <rect class="fill-gray-300 hover:fill-bookmark-soft-blue" width="12" height="12" stroke="" transform="translate(20, 0)"></rect>
+                  <rect class="fill-gray-300 hover:fill-bookmark-soft-blue" width="12" height="12" stroke="" transform="translate(40, 0)"></rect>
+              </svg>
+               </div>
+
+               <div class="mt-10 flex flex-row show-columns" id="show-4-columns" data-columns="4">
+                 <div>
+                  <svg class="mt-4 cursor-pointer " width="20" height="20">
+                    <rect class="fill-gray-300 hover:fill-bookmark-soft-blue" width="12" height="12" stroke-width:3 stroke=""></rect>          
+     </svg>
+  
+     <svg class="cursor-pointer " width="20" height="20">
+      <rect class="fill-gray-300 hover:fill-bookmark-soft-blue" width="12" height="12"  stroke-width:3 stroke=""></rect>          
+  </svg>
+                 </div>
+                <div>
+                  <svg class="mt-4 cursor-pointer " width="20" height="20">
+                    <rect class="fill-gray-300 hover:fill-bookmark-soft-blue" width="12" height="12" stroke-width:3 stroke=""></rect>          
+                  </svg>
+                  
+                    <svg class="cursor-pointer " width="20" height="12">
+                                    <rect class="fill-gray-300 hover:fill-bookmark-soft-blue" width="12" height="12"stroke-width:3;stroke=""></rect>            
+                      </svg>
+                </div>
+               </div>
+              </div>
+
+              <div x-data="{show: false}" @click.away="show = false"> <button @click="show = ! show" class="mt-4 border-0  text-black rounded-lg px-6 text-xl py-3 overflow-hidden focus:outline-none focus:border-white flex items-center">
+                <div class="items-end mr-10">
+                  <h1 class="items-center mt-5 text-2xl text-gray-500">Shorted By</h1>
+                </div>
+                      <div class="flex justify-between w-48 border-b border-slate-300 py-4 items-center"> <span class="text-2xl pl-3">Featured</span> 
+                        <svg class="fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 0 24 24" width="35">
+                              <path d="M7 10l5 5 5-5z" />
+                              <path d="M0 0h24v24H0z" fill="none" /></svg> 
+                            </div>
+                  </button>
+                  <div x-show="show" class="mt-2 py-2 bg-white rounded-lg shadow-xl"> <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Settings</a> <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Profile</a> <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Signout</a> </div>
+              </div>
+          </div>
+
+          <!--products-grid-->
+          <div class="container mx-auto grid xl:grid-cols-2 grid-cols-1 gap-10 pt-14 pl-10 pr-6" id="products-container">
+            <!--itmes-->
+            <div class="row-span-2 text-center">
+              <div class="relative flex justify-center bg-bookmark-four items-center aspect-square group">
+                <div class="flex justify-center">
+                  <a href="innerpage.html">
+                    <img class=" object-cover" src="./img/shop/Untitled-1.png" alt="">
+                  </a>
+                 
+                </div>
+                <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+                  <p class="text-center"> <span class="mr-5">+</span>
+                      Add To Cart</p>
+                </div>
+               
+              </div>
+              <div class="mt-16">
+                <h3 class="text-2xl font-bold"><a href="innerpage.html">Comfort Sofa</a> </h3>
+                <p class="text-xl mt-8 text-slate-400">$930.00</p>
+              </div>
+            </div>
+            <!--itmes-->
+            <div class="row-span-2 text-center">
+              <div class="relative flex justify-center bg-bookmark-soft-gray items-center aspect-square group">
+                <div class="flex justify-center">
+                  <a href="innerpage.html">
+                    <img class=" object-cover" src="./img/shop/sss.png" alt="">
+                  </a> 
+                </div>
+                <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+                  <p class="text-center"> <span class="mr-5">+</span>
+                      Add To Cart</p>
+                </div>
+                <div class="absolute bg-white  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5" src="./img/shop/Vector.png" alt=""></div>
+              </div>
+              <div class="mt-16 mb-5">
+                <h3 class="text-2xl font-bold"><a href="innerpage.html">Comfort Chair</a> 
+                </h3>
+                <p class="text-xl mt-8 text-slate-400">$930.00</p>
+              </div>
+            </div>
+            <!--itmes-->
+            <div class="row-span-2">
+              <div class="relative flex justify-center bg-bookmark-purple items-center aspect-square group">
+                <div class="flex items-center ">
+                  <a href="innerpage.html">
+                    <img class=" object-cover" src="./img/shop/dsd.png" alt="">
+                  </a>
+                  
+                </div>
+                <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+                  <p class="text-center"> <span class="mr-5">+</span>
+                      Add To Cart</p>
+                </div>
+              
+                <div class="absolute bg-white  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5" src="./img/shop/Vector.png" alt=""></div>
+              </div>
+              
+              <div class="mt-16 text-center">
+                <h3 class="text-2xl font-bold"><a href="innerpage.html">Wodden Table</a> </h3>
+                <p class="text-xl mt-8 text-slate-400">$930.00</p>
+              </div>
+            </div>
+            <!--itmes-->
+            <div class="row-span-2">
+              <div class="relative flex justify-center items-center bg-bookmark-four  aspect-square group">
+                <div class="flex items-center">
+                  <img class=" object-cover" src="./img/shop/ass.png" alt="">
+                </div>
+                <div class="bg-bookmark-soft-blue w-32 h-10 flex items-center justify-center rounded-tr-md rounded-br-md absolute top-5 left-0 text-white"> 
+                  <p class=" text-2xl">SOLD</p>
+                </div>
+                <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+                  <p class="text-center"> <span class="mr-5">+</span>
+                      Add To Cart</p>
+                </div>
+          
+                <div class="absolute bg-white  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8">
+                  <a href="innerpage.html">
+                    <img class="w-5" src="./img/love-two.png" alt="">
+                  </a>
+                 
+                </div>
+              </div>
+              <div class="mt-16 text-center">
+                <h3 class="text-2xl font-bold"><a href="innerpage.html">Table Lamp</a></h3>
+                <p class="text-xl mt-8 text-slate-400">$930.00</p>
+              </div>
+            </div>
+           
+          </div>
+            <!--image-buttons-->
+            <div class="pt-36 flex justify-center items-center gap-8">
+              <!--single-->
+              <div class="size-selector">
+                <input type="radio" name="size" id="size-xs" class="hidden">
+                <label for="size-xs" class="text-3xl rounded-sm h-16 w-16 bg-gray-200 flex items-center justify-center cursor-pointer text-bookmark-six">1</label>
+              </div>
+               <!--single-->
+               <div class="size-selector">
+                <input type="radio" name="size" id="size-ms" class="hidden">
+                <label for="size-ms" class="text-3xl rounded-sm h-16 w-16 bg-gray-200 flex items-center justify-center cursor-pointer text-bookmark-six">2</label>
+              </div>
+               <!--single-->
+               <div class="size-selector">
+                <input type="radio" name="size" id="size-xss" class="hidden">
+                <label for="size-xss" class="text-3xl rounded-sm h-16 w-16 bg-gray-200 flex items-center justify-center cursor-pointer text-bookmark-six">3</label>
+              </div>
+               <!--single-->
+               <div class="size-selector">
+                <input type="radio" name="size" id="size-xxs" class="hidden">
+                <label for="size-xxs" class="text-3xl rounded-sm h-16 w-16 bg-gray-200 flex items-center justify-center cursor-pointer text-bookmark-five">
+                  <svg width="20" class="stroke-current hover:w-18 hover:h-18 hover:fill-white" height="20" viewBox="0 0 10 8" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4C0 3.84848 0.0658408 3.70316 0.183038 3.59601C0.300235 3.48887 0.459188 3.42867 0.62493 3.42867H7.86537L5.18192 0.976546C5.06458 0.869266 4.99865 0.723764 4.99865 0.572047C4.99865 0.420331 5.06458 0.274829 5.18192 0.167549C5.29927 0.0602692 5.45842 0 5.62437 0C5.79032 0 5.94948 0.0602692 6.06682 0.167549L9.8164 3.5955C9.8746 3.64857 9.92077 3.71162 9.95228 3.78103C9.98378 3.85044 10 3.92485 10 4C10 4.07515 9.98378 4.14956 9.95228 4.21897C9.92077 4.28838 9.8746 4.35143 9.8164 4.4045L6.06682 7.83245C5.94948 7.93973 5.79032 8 5.62437 8C5.45842 8 5.29927 7.93973 5.18192 7.83245C5.06458 7.72517 4.99865 7.57967 4.99865 7.42795C4.99865 7.27624 5.06458 7.13073 5.18192 7.02345L7.86537 4.57133H0.62493C0.459188 4.57133 0.300235 4.51113 0.183038 4.40399C0.0658408 4.29684 0 4.15153 0 4Z" fill="#B9B9B9"/>
+                    </svg>
+                </label>
+              </div>
+                </div>
+          </div>
+          
+      </div>
+    
+      <!--service-section-->
+      <div class="px-48 pt-24 pb-24 mt-48 flex items-center justify-center gap-56 bg-bookmark-four">
+        <!--item-->
+        <div>
+          <div class="flex ">
+            <span class="mr-5"><img class="w-10 mr-5" src="./img/shop/Vector4.png" alt=""></span>
+            <h1 class="text-3xl mb-5 font-semibold">90 Days Return</h1>
+          </div>
+          <p class="ml-20 text-2xl text-gray-400" >Find a bright ideal to suit your taste Lorem</p>
+        </div>
+        <!--item-->
+        <div>
+          <div class="flex ">
+            <span class="mr-5"><img class="w-10 mr-5" src="./img/shop/Vector (1).png" alt=""></span>
+            <h1 class="text-3xl mb-5 font-semibold">Free Delivery</h1>
+          </div>
+          <p class="ml-20 text-2xl text-gray-400" >Find a bright ideal to suit your taste Lorem</p>
+        </div>
+        <!--item-->
+        <div>
+          <div class="flex ">
+            <span class="mr-5"><img class="w-10 mr-5" src="./img/shop/Vector (2).png" alt=""></span>
+            <h1 class="text-3xl mb-5 font-semibold">Secure Payment</h1>
+          </div>
+          <p class="ml-20 text-2xl text-gray-400" >Find a bright ideal to suit your taste Lorem</p>
+        </div>
+      </div>
+     
+       <!-------------Footer-====-------->
+   <div class="bg-black relative"> 
+    <div class="w-full">
+      <div class="flex justify-center mb-10 ">
+        <img class=" mt-16" src="./img/logo.png" alt="">
+      </div>
+   
+      <div class="w-full block mb-16">
+         <nav class="mx-auto container relative z-10 flex items-center justify-center ">
+        
+          <div class="">
+            <ul class="hidden xl:flex relative gap-14 items-center">
+      
+              <a class="text-2xl font-bold z-10 text-bookmark-black"  href="#">Home 
+               
+             </a>
+             
+              <a class="text-2xl font-bold text-bookmark-black" href="#">Shop</a>
+             
+              <a class="text-2xl font-bold text-bookmark-black" href="#">logbook</a>
+              
+              <a class="text-2xl font-bold text-bookmark-black" href="#">page</a>
+            
+              <a class="text-2xl font-bold text-bookmark-black" href="#">content</a>
+              <div class="animation start-animation"></div>
+          
+           </ul>
+          </div>
+          <button class="block xl:hidden py-3  rounded focus:outline-none hover:bg-gray-200 group">
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+         
+          </button>
+        </nav>
+     </div> 
+      <div class="text-center pb-16">
+        <ul>
+          <a class="" href=""><i class="text-3xl hover:text-white fa-brands fa-facebook text-bookmark-new-gray mr-10"></i></a>
+          <a class=" " href=""><i class="text-3xl mr-10 hover:text-white fa-brands fa-twitter text-bookmark-new-gray "></i></a>
+          <a class=" " href=""><i class="text-3xl hover:text-white mr-10 fa-brands fa-youtube text-bookmark-new-gray "></i></a>
+          <a  href=""><i class="text-3xl hover:text-white mr-10 fa-brands fa-pinterest text-bookmark-new-gray "></i></a>
+        </ul>
+      </div>
+    </div> 
+     <div class="border-t text-center ">
+      <p class="text-white opacity-40 p-10 text-2xl">Copyright 2022 all right resarved</p>
+    </div>
+  <!-----top-to buttom-->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 text-white font-medium text-xs leading-tight uppercase   focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bottom-40 absolute right-16" id="btn-back-to-top">
+    <img class="w-12 " src="./img/top-bottom.png" alt="">
+    </button>
+  </div>
+
+  <!--accordiance-->
+  
+
+  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+      <script src="./script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    
+<script src="https://cdn.tailwindcss.com"></script>
+    <script
+    src="https://kit.fontawesome.com/afa777e6cd.js"
+    crossorigin="anonymous"
+  ></script>
+    <!---iconic-icons-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="font-mont">
+    <!-------navbar------->
+    <div class="container mx-auto relative z-10 w-full">
+        <nav class=" xl:bg-inherit mx-auto pt-20 relative z-10 xl:flex items-center xl:justify-between ">
+         <div class="flex items-center justify-between">
+           <img class="w-52 md:w-40" src="./img/logo (1).png" alt="">
+          <span class="block xl:hidden">
+            
+            <ion-icon name="menu" class="text-6xl md:text-4xl" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+          
+          <div class="">
+            <div class="xl:bg-inherit bg-white xl:flex z-[-1] top-[400px] transition-all ease-in duration-300 xl:opacity-100 opacity-0 xl:z-auto xl:static absolute  gap-14 items-center w-full left-0">
+
+
+    <div class="flex xl:gap-12 md:gap-6 links items-center justify-center">
+
+  <a class="xl:text-2xl text-xl font-semibold z-10 text-bookmark-black xl:mr-5 mr-0"  href="index.html">Home 
+               
+    <i  class="fa-solid fa-angle-down ml-2"></i>
+    </a>
+   
+     <a class="xl:mr-5 mr-0 text-2xl font-semibold text-bookmark-black" href="shop.html">Shop</a>
+     
+    <a class="xl:mr-5 mr-0 text-2xl font-semibold  text-bookmark-black" href="blog.html">Blog</a>
+     
+     <a class="xl:mr-5 mr-0 text-2xl font-semibold  text-bookmark-black" href="page.html">page</a>
+     
+   <a class=" text-2xl font-semibold  text-bookmark-black" href="contact.html">content</a>
+    <span class="link"></span>
+</div>        
+            <a class="" href="#"><img class="w-6" src="./img/search-Vector.png" alt=""></a>
+           
+             <a class="relative" href=""><img class="w-6" src="./img/busket-Vector.png" alt="" ><div class="text-center absolute w-5 h-5 -top-4 left-3 bg-bookmark-blue rounded-full">2</div></a>
+            
+          <a href=""> <img class="w-6"  src="./img/Group 1.png" alt=""></a></a>
+           
+           </ul>
+          </div>
+        </nav>
+      </div>
+<!---------top-background-------->
+      <div class=" mt-12 relative">
+          <img class="w-full" src="./img/mainpage/masaaki-komori-qgEKJkf4sKY-unsplash 1.png" alt="">
+          <div class="absolute top-30% left-48">
+              <h2 class="text-5xl font-semibold">Products</h2>
+              <div class="text-2xl font-semibold mt-10">Home <span class="p-1"> /</span> <span class="text-bookmark-blue">Shop</span>
+                 </div>
+          </div>
+      </div>
+
+      <!--products fiflter part-->
+    
+    
+     <div class="portfolio my-28 mx-28 " id="Portfolio">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="section-title text-center mb-5 max-w-full mt-5">
+                    <h1 class="inline-block text-6xl font-bold relative  mb-5">Our Blog</h1>
+                </div>
+            </div>
+            <div class="row">
+               
+                <div class="filter-buttons max-w-full mb-32">
+                 <div id="filter-btns">
+                        <a class="active text-2xl mx-10 inline-block font-semibold " data-target="all"> 
+                             ALL</a>
+                        <a class="active text-2xl mx-10  inline-block font-semibold" data-target="Branding">Shop</a>
+                        <a class="active text-2xl mx-10  inline-block font-semibold" data-target="Photoshop">Fashion</a>
+                        <a class="active text-2xl mx-10  inline-block font-semibold" data-target="Fashion">Brands</a>
+                        <a class="active text-2xl mx-10  inline-block font-semibold" data-target="Branding">Company</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row"> -->
+                <div class="portfolio-gallery grid grid-cols-2 gap-x-32">
+                    
+                    <div class="item" data-id="Branding">
+                        <div class="inner relative">
+                            <img class="w-full block" src="./img/mainpage/brendan-church-9F3sEV1-Iog-unsplash 1.png" alt="portfolio">
+                            <!--contant-->
+                            <div class="bg-white w-44  h-10 flex items-center justify-center  absolute bottom-8 left-0 "> 
+                              <p class="text-black text-2xl">15 May 2022</p>
+                            </div>
+                            <div class="bg-white w-36 h-10 flex items-center justify-center absolute bottom-8 right-0 "> 
+                              <p class="text-black text-2xl">Fashion</p>
+                            </div>
+                        </div>
+                    
+                        <h1 class="text-4xl font-bold py-16">So isn’t land signs greater void face</h1>
+                        <p class="text-2xl text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur lorem adipiscing elit sed do eiusmod tempor incidid ut labore...</p>
+                        <span class="inline-block mb-24 text-2xl">Read more <a  href=""><img class="w-6 ml-2 inline-block" src="./img/mainpage/Vector.png" alt=""></a></span>
+
+                    </div>
+  
+                    <div class="item" data-id="Photoshop">
+                        <div class="inner relative">
+                            <img class="w-full block" src="./img/mainpage/content-pixie-HPjtXjpSWYw-unsplash 1.png" alt="portfolio">
+                            <!--content-->
+                            <div class="bg-white w-44  h-10 flex items-center justify-center absolute bottom-8 left-0 "> 
+                              <p class="text-black text-2xl">15 May 2022</p>
+                            </div>
+                            <div class="bg-white w-36 h-10 flex items-center justify-center absolute bottom-8 right-0 "> 
+                              <p class="text-black text-2xl">Fashion</p>
+                            </div>
+                             
+                        </div>
+                        <h1 class="text-4xl font-bold py-16">So isn’t land signs greater void face</h1>
+                        <p class="text-2xl text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur lorem adipiscing elit sed do eiusmod tempor incidid ut labore...</p>
+                        <span class="inline-block mb-24 text-2xl">Read more <a href=""><img class="w-6 ml-2  inline-block" src="./img/mainpage/Vector.png" alt=""></a></span>
+
+                    </div>
+  
+                    <div class="item" data-id="Fashion">
+                        <div class="inner relative">
+                            <img class="w-full block" src="./img/mainpage/marissa-grootes-gzuk1Onzdw4-unsplash 1.png" alt="portfolio">
+                             <!--contant-->
+                             <div class="bg-white w-44  h-10 flex items-center justify-center  absolute bottom-8 left-0 "> 
+                              <p class="text-black text-2xl">15 May 2022</p>
+                            </div>
+                            <div class="bg-white w-36 h-10 flex items-center justify-center absolute bottom-8 right-0 "> 
+                              <p class="text-black text-2xl">Fashion</p>
+                            </div>
+                             
+                        </div>
+                        <h1 class="text-4xl font-bold py-16">So isn’t land signs greater void face</h1>
+                        <p class="text-2xl text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur lorem adipiscing elit sed do eiusmod tempor incidid ut labore...</p>
+                        <span class="inline-block mb-24 text-2xl">Read more <a href=""><img class="w-6 ml-2  inline-block" src="./img/mainpage/Vector.png" alt=""></a></span>
+
+                    </div>
+  
+                    <div class="item" data-id="Fashion">
+                        <div class="inner relative">
+                            <img class="w-full block" src="./img/mainpage/sincerely-media-VLcEp-a4P7s-unsplash 1.png" alt="portfolio">
+                             <!--contant-->
+                            <div class="bg-white w-44  h-10 flex items-center justify-center  absolute bottom-8 left-0 "> 
+                              <p class="text-black text-2xl">15 May 2022</p>
+                            </div>
+                            <div class="bg-white w-36 h-10 flex items-center justify-center absolute bottom-8 right-0 "> 
+                              <p class="text-black text-2xl">Fashion</p>
+                            </div>
+                            
+                        </div>
+                        <h1 class="text-4xl font-bold py-16">So isn’t land signs greater void face</h1>
+                        <p class="text-2xl text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur lorem adipiscing elit sed do eiusmod tempor incidid ut labore...</p>
+                        <span class="inline-block mb-24 text-2xl">Read more <a href=""><img class="w-6 ml-2  inline-block" src="./img/mainpage/Vector.png" alt=""></a></span>
+
+                    </div>
+  
+                    <div class="item" data-id="Branding">
+                        <div class="inner relative">
+                            <img class="w-full block" src="./img/mainpage/s-o-c-i-a-l-c-u-t-5RR6r6X3zxY-unsplash 1.png" alt="portfolio">
+                             <!--contant-->
+                             <div class="bg-white w-44  h-10 flex items-center justify-center  absolute bottom-8 left-0 "> 
+                              <p class="text-black text-2xl">15 May 2022</p>
+                            </div>
+                            <div class="bg-white w-36 h-10 flex items-center justify-center absolute bottom-8 right-0 "> 
+                              <p class="text-black text-2xl">Fashion</p>
+                            </div>
+                             
+                        </div>
+                        <h1 class="text-4xl font-bold py-16">So isn’t land signs greater void face</h1>
+                        <p class="text-2xl text-gray-500 mb-8">Lorem ipsum dolor sit amet consectetur lorem adipiscing elit sed do eiusmod tempor incidid ut labore...</p>
+                        <span class="inline-block mb-24 text-2xl">Read more <a href=""><img class="w-6 ml-2  inline-block" src="./img/mainpage/Vector.png" alt=""></a></span>
+
+                    </div>
+
+                    
+                </div>
+                 <!--image-buttons-->
+            <div class="pt-28 flex justify-center items-center gap-8">
+                <!--single-->
+                <div class="size-selector">
+                  <input type="radio" name="size" id="size-xs" class="hidden">
+                  <label for="size-xs" class="text-3xl rounded-sm h-16 w-16 bg-gray-200 flex items-center justify-center cursor-pointer text-bookmark-six">1</label>
+                </div>
+                 <!--single-->
+                 <div class="size-selector">
+                  <input type="radio" name="size" id="size-ms" class="hidden">
+                  <label for="size-ms" class="text-3xl rounded-sm h-16 w-16 bg-gray-200 flex items-center justify-center cursor-pointer text-bookmark-six">2</label>
+                </div>
+                 <!--single-->
+                 <div class="size-selector">
+                  <input type="radio" name="size" id="size-xss" class="hidden">
+                  <label for="size-xss" class="text-3xl rounded-sm h-16 w-16 bg-gray-200 flex items-center justify-center cursor-pointer text-bookmark-six">3</label>
+                </div>
+                 <!--single-->
+                 <div class="size-selector">
+                  <input type="radio" name="size" id="size-xxs" class="hidden">
+                  <label for="size-xxs" class="text-3xl rounded-sm h-16 w-16 bg-gray-200 flex items-center justify-center cursor-pointer text-bookmark-five">
+                    <svg width="20" class="hover:stroke-white" height="20" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4C0 3.84848 0.0658408 3.70316 0.183038 3.59601C0.300235 3.48887 0.459188 3.42867 0.62493 3.42867H7.86537L5.18192 0.976546C5.06458 0.869266 4.99865 0.723764 4.99865 0.572047C4.99865 0.420331 5.06458 0.274829 5.18192 0.167549C5.29927 0.0602692 5.45842 0 5.62437 0C5.79032 0 5.94948 0.0602692 6.06682 0.167549L9.8164 3.5955C9.8746 3.64857 9.92077 3.71162 9.95228 3.78103C9.98378 3.85044 10 3.92485 10 4C10 4.07515 9.98378 4.14956 9.95228 4.21897C9.92077 4.28838 9.8746 4.35143 9.8164 4.4045L6.06682 7.83245C5.94948 7.93973 5.79032 8 5.62437 8C5.45842 8 5.29927 7.93973 5.18192 7.83245C5.06458 7.72517 4.99865 7.57967 4.99865 7.42795C4.99865 7.27624 5.06458 7.13073 5.18192 7.02345L7.86537 4.57133H0.62493C0.459188 4.57133 0.300235 4.51113 0.183038 4.40399C0.0658408 4.29684 0 4.15153 0 4Z" fill="#B9B9B9"/>
+                      </svg>
+                  </label>
+                </div>
+                  </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    
+       <!-------------Footer-====-------->
+   <div class="bg-black relative"> 
+    <div class="w-full">
+      <div class="flex justify-center mb-10 ">
+        <img class=" mt-16" src="./img/logo.png" alt="">
+      </div>
+   
+      <div class="w-full block mb-16">
+         <nav class="mx-auto container relative z-10 flex items-center justify-center ">
+        
+          <div class="">
+            <ul class="hidden xl:flex relative gap-14 items-center">
+      
+              <a class="text-2xl font-bold z-10 text-bookmark-black"  href="#">Home 
+               
+             </a>
+             
+              <a class="text-2xl font-bold text-bookmark-black" href="#">Shop</a>
+             
+              <a class="text-2xl font-bold text-bookmark-black" href="#">logbook</a>
+              
+              <a class="text-2xl font-bold text-bookmark-black" href="#">page</a>
+            
+              <a class="text-2xl font-bold text-bookmark-black" href="#">content</a>
+              <div class="animation start-animation"></div>
+          
+           </ul>
+          </div>
+          <button class="block xl:hidden py-3  rounded focus:outline-none hover:bg-gray-200 group">
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+         
+          </button>
+        </nav>
+     </div> 
+      <div class="text-center pb-16">
+        <ul>
+          <a class="" href=""><i class="text-3xl hover:text-white fa-brands fa-facebook text-bookmark-new-gray mr-10"></i></a>
+          <a class=" " href=""><i class="text-3xl mr-10 hover:text-white fa-brands fa-twitter text-bookmark-new-gray "></i></a>
+          <a class=" " href=""><i class="text-3xl hover:text-white mr-10 fa-brands fa-youtube text-bookmark-new-gray "></i></a>
+          <a  href=""><i class="text-3xl hover:text-white mr-10 fa-brands fa-pinterest text-bookmark-new-gray "></i></a>
+        </ul>
+      </div>
+    </div> 
+     <div class="border-t text-center ">
+      <p class="text-white opacity-40 p-10 text-2xl">Copyright 2022 all right resarved</p>
+    </div>
+  <!-----top-to buttom-->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 text-white font-medium text-xs leading-tight uppercase   focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bottom-40 absolute right-16" id="btn-back-to-top">
+    <img class="w-12 " src="./img/top-bottom.png" alt="">
+    </button>
+  </div>
+
+  
+<!--juqery--->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+ 
+      <script src="./script.js"></script>
+</body>
+</html>
+

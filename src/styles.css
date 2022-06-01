@@ -1,0 +1,309 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family:'montregular';
+    src: url('../public/fonts/mont-regular-webfont.woff2') format('woff2'),
+         url('../public/fonts/mont-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@layer components{
+
+/**** rating*****/
+
+.stars {
+  width: 310px;
+  height: 63px;
+  text-align: center;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.stars .star {
+  width: 84px;
+  position: absolute;
+  top: 0;
+  font-size: 40px;
+  color: #F3AF01;
+  padding: 0 5px;
+}
+
+.stars-ghost {
+  width: 0px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.3s ease 0s;
+}
+
+.stars .star:nth-child(1) {
+  left: 0;
+}
+
+.stars .star:nth-child(2) {
+  left: 54px;
+}
+
+.stars .star:nth-child(3) {
+  left: 108px;
+}
+.stars .star:nth-child(4) {
+  left: 160px;
+}
+.stars .star:nth-child(5) {
+  left: 212px;
+}
+
+
+.info {
+  width: 100%;
+ 
+}
+/*** number comedown***/
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .custom-number-input input:focus {
+    outline: none !important;
+  }
+
+  .custom-number-input button:focus {
+    outline: none !important;
+  }
+
+
+/**** rating*****/
+
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+    .radio:checked {
+        --tw-bg-opacity: 1;
+       
+        background-color:#8B8B8B;
+        ;
+        -webkit-animation: radiomark var(--animation-input,.2s)ease-in-out;
+        animation: radiomark var(--animation-input,.2s)ease-in-out;
+        box-shadow: 0 0 0 4px hsl(var(--b1))inset,0 0 0 7px hsl(var(--b1))inset;
+    }
+   
+    }
+
+    @layer components{
+      
+
+        .radio {
+            --chkbg: var(--bc);
+            height: 1.5rem;
+            width: 1.5rem;
+            cursor: pointer;
+            -webkit-appearance: none;
+            appearance: none;
+            border-width: 2px;
+            border-color: hsl(var(--bc)/var(--tw-border-opacity));
+            --tw-border-opacity: .2;
+            transition: background,box-shadow var(--animation-input,.2s)ease-in-out;
+            border-radius: 9999px;
+            flex-shrink: 0;
+        }
+    }
+
+    @layer components{
+        .size-selector input:checked + label{
+@apply bg-bookmark-soft-blue text-white
+        }
+    } 
+
+    @layer components{
+       
+        .links a{
+            
+            position: relative;
+        }
+        .links a::after{
+            content:"";
+            position:absolute;
+            bottom:8px;
+            left:0;
+            background-color:#5DCCB8;
+            height:10px;
+            width:0;
+            z-index:-1 ;
+            transition:0.2s
+        }
+        .links a:hover::after{
+            width:100%;
+          
+        }
+    }
+
+    @layer components{
+
+    /*******/
+
+ 
+.section-title{
+    flex: 0 0 100%; 
+}
+
+.portfolio .section-title h1:before{
+    left: 30%;
+}
+.portfolio .filter-buttons{
+    flex: 0 0 100%;
+    
+}
+.portfolio .filter-buttons #filter-btns{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+#filter-btns  a{
+  position: relative;
+  z-index: 2;
+}
+#filter-btns a::after{
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  background-color: #5DCCB8;
+  height: 10px;
+  width: 0;
+  z-index: -1;
+  transition: 0.2s;
+}
+#filter-btns a:hover::after{
+  width:100%; 
+}
+.portfolio .portfolio-gallery .item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    position: relative;
+  
+  
+}
+
+
+ 
+@media(min-width:767px){
+ 
+    .portfolio .portfolio-gallery .item{
+        flex:0 0 50% ;
+        max-width: 100%;
+        position: relative;
+        
+    }
+ 
+}
+@media(max-width:500px){
+ 
+    .portfolio .portfolio-gallery .item{
+        flex:0 0 100% ;
+        max-width: 100%; }
+}
+    /*******/
+
+     /*chair after**/
+
+     .chair::after {
+      width: 100%;
+      height: 82%;
+      background: #FDF4F4;
+      left: 0;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+  }
+   
+        .tab-content {
+        max-height: 0;
+        -webkit-transition: max-height .35s;
+        -o-transition: max-height .35s;
+        transition: max-height .35s;
+        }
+      
+        .tab input:checked ~ .tab-content {
+        max-height: 100vh;
+        }
+       
+        .tab input:checked + label{
+     
+        font-size: 1.25rem;
+        padding: 1.25rem;
+        border-left-width: 2px; 
+        border-color: #6574cd; 
+        background-color: #f8fafc; 
+        color: #6574cd; 
+        }
+       
+        .tab label::after {
+        float:right;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5;
+        font-size: 1.25rem;
+        text-align: center;
+        -webkit-transition: all .35s;
+        -o-transition: all .35s;
+        transition: all .35s;
+        }
+        
+        .tab input[type=checkbox] + label::after {
+        content: "+";
+        font-weight:bold; 
+        border-width: 1px; 
+        border-radius: 9999px; 
+        border-color: #b8c2cc; 
+        margin-top: 10px;
+        }
+        .tab input[type=radio] + label::after {
+        content: "\25BE";
+        font-weight:bold; 
+        border-width: 1px; 
+        border-radius: 9999px; 
+        border-color: #b8c2cc; 
+        }
+        
+        .tab input[type=checkbox]:checked + label::after {
+        transform: rotate(315deg);
+        background-color: #6574cd; 
+        color: #f8fafc; 
+        }
+        .tab input[type=radio]:checked + label::after {
+        transform: rotateX(180deg);
+        background-color: #6574cd; 
+        color: #f8fafc;
+        }
+    
+
+
+        .flex.bg-gray-50.max-h-0.peer-checked\:max-h-screen.items-center {
+            overflow: hidden;
+        }
+      
+    }

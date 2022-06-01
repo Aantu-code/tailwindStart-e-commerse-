@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    
+<script src="https://cdn.tailwindcss.com"></script>
+    <script
+    src="https://kit.fontawesome.com/afa777e6cd.js"
+    crossorigin="anonymous"
+  ></script>
+    <!---iconic-icons-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="font-mont">
+    <!-------navbar------->
+    <div class="container mx-auto relative z-10 w-full">
+        <nav class=" xl:bg-inherit mx-auto pt-20 relative z-10 xl:flex items-center xl:justify-between ">
+         <div class="flex items-center justify-between">
+           <img class="w-52 md:w-40" src="./img/logo (1).png" alt="">
+          <span class="block xl:hidden">
+            
+            <ion-icon name="menu" class="text-6xl md:text-4xl" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+          
+          <div class="">
+            <ul class="xl:bg-inherit bg-white xl:flex z-[-1] top-[400px] transition-all ease-in duration-300 xl:opacity-100 opacity-0 xl:z-auto xl:static absolute  gap-14 items-center w-full left-0">
+
+
+    <li class="flex xl:gap-12 md:gap-6 links items-center justify-center">
+
+  <a class="xl:text-2xl text-xl font-semibold z-10 text-bookmark-black xl:mr-5 mr-0"  href="index.html">Home 
+               
+    <i  class="fa-solid fa-angle-down ml-2"></i>
+    </a>
+   
+     <a class="xl:mr-5 mr-0 text-2xl font-semibold text-bookmark-black" href="shop.html">Shop</a>
+     
+    <a class="xl:mr-5 mr-0 text-2xl font-semibold  text-bookmark-black" href="blog.html">Blog</a>
+     
+     <a class="xl:mr-5 mr-0 text-2xl font-semibold  text-bookmark-black" href="page.html">page</a>
+     
+   <a class=" text-2xl font-semibold  text-bookmark-black" href="contact.html">content</a>
+    <span class="link"></span>
+</li>        
+            <a class="" href="#"><img class="w-6" src="./img/search-Vector.png" alt=""></a>
+           
+             <a class="relative" href=""><img class="w-6" src="./img/busket-Vector.png" alt="" ><div class="text-center absolute w-5 h-5 -top-4 left-3 bg-bookmark-blue rounded-full">2</div></a>
+            
+          <a href=""> <img class="w-6"  src="./img/Group 1.png" alt=""></a></a>
+           
+           </ul>
+          </div>
+        </nav>
+      </div>
+<!---------top-background-------->
+      <div class=" mt-12 relative">
+          <img class="w-full" src="./img/contact/image 2.png" alt="">
+          <div class="absolute top-30% left-48">
+              <h2 class="text-5xl font-semibold">Products</h2>
+              <div class="text-2xl font-semibold mt-10">Home <span class="p-1"> /</span> <span class="text-bookmark-blue">Shop</span>
+                 </div>
+          </div>
+      </div>
+
+<!--google map and address container-->
+<div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 sm:pr-52 sm:pl-52 pl-20 pr-20 sm:mb-0  gap-x-28 pt-48 pb-48">
+    <div>
+        <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56179.151828263755!2d-0.154026457697514!3d51.51704655292447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603554edf855f%3A0xa1185c8d19184c0!2sCity%20of%20London%2C%20London%2C%20UK!5e0!3m2!1sen!2sbd!4v1653929333016!5m2!1sen!2sbd" width="600" height="510" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<div class="sm:mt-0 mt-10 ">
+    <div class="block mb-14">
+       <img class="inline-block mr-7 w-6" src="./img/contact/Vector.png" alt="">
+       <span class="text-2xl font-semibold">Address</span>
+       <p class="text-2xl mt-6 ml-14 leading-10 text-gray-500">Moonshine St. 14/05 Light City,<br>
+        London, United Kingdom</p>
+    </div>
+    <div class="block mb-14">
+        <img class="inline-block mr-7 w-6" src="./img/contact/Vector-2.png" alt="">
+        <span class="text-2xl font-semibold mb-8">Phone</span>
+        <p class="text-2xl leading-10  mt-6 ml-14 text-gray-500">00 (123) 456 78 90 <br>
+            00 (987) 654 32 10</p>
+     </div>
+     <div class="block">
+        <img class="inline-block mr-7 w-6" src="./img/contact/Vector (1).png" alt="">
+        <span class="text-2xl font-semibold">E-mail</span>
+        <p class="text-2xl leading-10  mt-6 ml-14 text-gray-500">Jompha@email.com <br>
+            help@jompha.com</p>
+     </div>
+</div>
+</div>
+ 
+   <!--contact-from-->  
+
+   <div class="flex sm:pl-52 sm:pr-52 pl-10 pr-10 items-center container mx-auto w-full ">
+    <div class="w-full  md:mx-auto">
+      <h1 class="block w-full text-center text-black font-semibold text-5xl mb-6">Drop Us a Line</h1>
+      <p class="mt-10 text-center mb-24 leading-10 text-gray-500 text-2xl">Reach out to us from our contact form and we will <br> get back to you shortly.</p>
+
+      <form class="md:flex md:flex-wrap md:justify-between" action="/" method="post">
+        <div class="flex flex-col w-full md:w-1/2">
+          
+         <input class="py-10 md:mr-10 md:mb-8 bg-gray-100 px-10 text-2xl" type="text" placeholder="first Name *">
+        </div>
+        <div class="flex flex-col w-full md:w-1/2">
+         
+            <input class="py-10 md:mr-10 md:mb-8 bg-gray-100 px-10 text-2xl" type="text" placeholder="Last Name *">
+        </div>
+        <div class="flex flex-col md:w-full">
+          
+          <input class="py-10 px-10 mb-8 md:mr-9 bg-gray-100 text-2xl" type="email" placeholder="Enter your e-mail *">
+        </div>
+        <div class="flex flex-col mb-4 md:w-full md:mr-9 ">
+          
+            <textarea class="w-full px-10 bg-gray-100 h-96  py-10 text-2xl  focus:shadow-outline"  placeholder="Message *"></textarea>
+        </div>
+        <button class="block px-14 rounded-full py-7  mt-5 text-white bg-bookmark-soft-blue  text-2xl mx-auto " >Send Message</button>
+        
+      </form>
+      
+    </div>
+  </div>
+       <!-------------Footer-====-------->
+   <div class="bg-black relative mt-24"> 
+    <div class="w-full">
+      <div class="flex justify-center mb-10 ">
+        <img class=" mt-16" src="./img/logo.png" alt="">
+      </div>
+   
+      <div class="w-full block mb-16">
+         <nav class="mx-auto container relative z-10 flex items-center justify-center ">
+        
+          <div class="">
+            <ul class="hidden xl:flex relative gap-14 items-center">
+      
+              <a class="text-2xl font-bold z-10 text-bookmark-black"  href="#">Home 
+               
+             </a>
+             
+              <a class="text-2xl font-bold text-bookmark-black" href="#">Shop</a>
+             
+              <a class="text-2xl font-bold text-bookmark-black" href="#">logbook</a>
+              
+              <a class="text-2xl font-bold text-bookmark-black" href="#">page</a>
+            
+              <a class="text-2xl font-bold text-bookmark-black" href="#">content</a>
+              <div class="animation start-animation"></div>
+          
+           </ul>
+          </div>
+          <button class="block xl:hidden py-3  rounded focus:outline-none hover:bg-gray-200 group">
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+         
+          </button>
+        </nav>
+     </div> 
+      <div class="text-center pb-16">
+        <ul>
+          <a class="" href=""><i class="text-3xl hover:text-white fa-brands fa-facebook text-bookmark-new-gray mr-10"></i></a>
+          <a class=" " href=""><i class="text-3xl mr-10 hover:text-white fa-brands fa-twitter text-bookmark-new-gray "></i></a>
+          <a class=" " href=""><i class="text-3xl hover:text-white mr-10 fa-brands fa-youtube text-bookmark-new-gray "></i></a>
+          <a  href=""><i class="text-3xl hover:text-white mr-10 fa-brands fa-pinterest text-bookmark-new-gray "></i></a>
+        </ul>
+      </div>
+    </div> 
+     <div class="border-t text-center ">
+      <p class="text-white opacity-40 p-10 text-2xl">Copyright 2022 all right resarved</p>
+    </div>
+  <!-----top-to buttom-->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 text-white font-medium text-xs leading-tight uppercase   focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bottom-40 absolute right-16" id="btn-back-to-top">
+    <img class="w-12 " src="./img/top-bottom.png" alt="">
+    </button>
+  </div>
+
+  
+<!--jquery cdn--->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+ 
+      <script src="./script.js"></script>
+</body>
+</html>
+

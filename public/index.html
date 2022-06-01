@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>write commend :- npn run watch</title>
+    <script
+    src="https://kit.fontawesome.com/afa777e6cd.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.3/dist/flowbite.min.css" />
+<!---iconic-icons-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="font-mont">
+
+<!--------NAVBAR--------->
+<div class="absolute z-10 w-full">
+  <nav class="px-48 xl:bg-inherit  mx-auto pt-10 relative z-10 xl:flex items-center xl:justify-between ">
+   <div class="flex items-center justify-between">
+     <img class="w-52 md:w-40" src="./img/logo (1).png" alt="">
+    <span class="block xl:hidden">
+      
+      <ion-icon name="menu" class="text-6xl md:text-4xl" onclick="Menu(this)"></ion-icon>
+  </span>
+</div>
+    
+    <div class="">
+      <ul class="xl:bg-inherit p-10 bg-white xl:flex z-[-1] top-[400px] transition-all ease-in duration-300 xl:opacity-100 opacity-0 xl:z-auto xl:static absolute  gap-14 items-center w-full left-0">
+    <li class="sm:pt-10 xl:pt-0 border-b-8 border-transparent hover:border-bookmark-blue duration-300"><a class="text-2xl font-semibold z-10 text-bookmark-black"  href="index.html">Home 
+         
+      <i  class="fa-solid fa-angle-down ml-2"></i>
+      </a></li>
+     
+       <li class="sm:pt-10 xl:pt-0 border-b-8 border-transparent hover:border-bookmark-blue duration-300"> <a class="text-2xl font-semibold text-bookmark-black" href="shop.html">Shop</a></li>
+       
+       <li class="sm:pt-10 xl:pt-0 border-b-8 border-transparent hover:border-bookmark-blue duration-300"> <a class="text-2xl font-semibold  text-bookmark-black" href="blog.html">Blog</a></li>
+       
+        <li class="sm:pt-10 xl:pt-0 border-b-8 border-transparent hover:border-bookmark-blue duration-300"> <a class="text-2xl font-semibold  text-bookmark-black" href="page.html">page</a></li>
+       
+      <li class="sm:pt-10 xl:pt-0 border-b-8 border-transparent hover:border-bookmark-blue duration-300"> <a class="text-2xl font-semibold  text-bookmark-black" href="contact.html">content</a></li>
+       
+      <a class="" href="#"><img class="w-6" src="./img/search-Vector.png" alt=""></a>
+     
+       <a class="relative" href=""><img class="w-6" src="./img/busket-Vector.png" alt="" ><div class="text-center absolute w-5 h-5 -top-4 left-3 bg-bookmark-blue rounded-full">2</div></a>
+      
+    <a href=""> <img class="w-6"  src="./img/Group 1.png" alt=""></a></a>
+     
+     </ul>
+    </div>
+  
+  </nav>
+</div>
+
+    <div id="default-carousel" class=" relative z-0" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="overflow-hidden  relative h-screen rounded-lg ">
+        <img class="h-screen w-full" src="./img/image 2.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+           <!-- Item 1 -->
+          <div class=" hidden duration-700 ease-in-out" data-carousel-item>
+            
+              <div class="top-1/3 left-48  absolute">
+                <p class="text-2xl xl:mb-14 md:mb-8">Liting 2022 <span class="ml-3">|</span> </p>
+                <div class="relative ">
+                  <h1 class="xl:text-8xl md:text-6xl relative z-10 font-bold xl:mb-14 md:mb-10"><img class="absolute left-5 w-80 bottom-4 -z-10" src="./img/hedline styleVector 1.png" alt=""> Table Lamp</h1></div>
+              
+              <div class="relative md:mb-8 xl:mb-12"> 
+                <span class="text-gray-400">From <h2 class="xl:text-5xl md:text-2xl font-bold absolute left-12 bottom-1 text-black">$678.00</h2></span>
+              </div>
+                <button class="border flex text-center items-center border-black md:text-xs xl:text-xl font-bold xl:px-12 md:px-8 md:py-4 xl:py-6">Add To Cart <img class="xl:ml-4 md:ml-2 xl:w-5 md:w-4" src="./img/busket-Vector.png" alt=""></button>
+              </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            
+            <div class="top-1/3 left-48 absolute">
+              <p class="text-2xl md:mb-8 xl:mb-14">Liting 2022 <span class="ml-3">|</span> </p>
+              <div class="relative ">
+                <h1 class="xl:text-8xl md:text-6xl relative z-10 font-bold md:mb-8 xl:mb-14"><img class="absolute left-5 w-80 bottom-4 -z-10" src="./img/hedline styleVector 1.png" alt=""> Table Lamp</h1></div>
+            
+            <div class="relative md:mb-8 xl:mb-14"> 
+              <span class="text-gray-400">From <h2 class="xl:text-5xl md:text-3xl font-bold absolute left-12 bottom-1 text-black">$678.00</h2></span>
+            </div>
+              <button class="border flex text-center items-center border-black md:text-xs text-xl font-bold xl:px-12 md:px-8 md:py-4 xl:py-6">Add To Cart <img class="xl:ml-4 md:ml-2 md:w-4 xl:w-5" src="./img/busket-Vector.png" alt=""></button>
+            </div>
+
+        </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            
+            <div class="top-1/3 left-48 absolute">
+              <p class="text-2xl md:mb-8 xl:mb-14">Liting 2022 <span class="ml-3">|</span> </p>
+              <div class="relative ">
+                <h1 class="xl:text-8xl md:text-6xl relative z-10 font-bold md:mb-8 xl:mb-14"><img class="absolute left-5 w-80 bottom-4 -z-10" src="./img/hedline styleVector 1.png" alt=""> Table Lamp</h1></div>
+            
+            <div class="relative mb-12"> 
+              <span class="text-gray-400">From <h2 class="xl:text-5xl md:text-3xl font-bold absolute left-12 bottom-1 text-black">$678.00</h2></span>
+            </div>
+              <button class="border flex text-center items-center border-black md:text-xs xl:text-xl font-bold md:px-8 xl:px-12 md:py-4 xl:py-6">Add To Cart <img class="xl:ml-4 md:ml-2 md:w-4 xl:w-5" src="./img/busket-Vector.png" alt=""></button>
+            </div>
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      
+      <div class="flex mr-20 gap-5 items-center top-[80%] right-[40%] xl:flex-col absolute xl:right-0 xl:top-1/2  z-30  xl:-translate-x-1/2">
+          <button type="button" class="w-5 h-5 border-4 border-solid border-bookmark-blue   bg-white rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button >
+          <button type="button" class="w-5 h-5 rounded-full bg-bookmark-new-gray" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-5 h-5   rounded-full bg-bookmark-new-gray " aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      </div>  
+  </div>
+   
+ <!-----------TOP TRANDING THIS WEEK--------------->
+ <div>
+  <div class=" container mx-auto mt-36 flex justify-center">
+    <h1 class="text-5xl relative z-10 font-bold mb-12"><img class="absolute left-2 w-64 bottom-2 -z-10" src="./img/hedline styleVector 1.png" alt="">Top Trending This Week</h1>
+</div>
+<p class="text-2xl text-center text-bookmark-new-gray">Find a bright ideal to suit your taste with our great selection</p>
+
+</div>
+ <!-----------PRODUCT-SECTION--------->
+<div class="container mx-auto grid xl:grid-cols-3 grid-cols-2 gap-8 pt-20 ">
+  <div class="row-span-2 text-center">
+    <div class="relative flex justify-center bg-bookmark-soft-gray items-center py-28 group">
+      <div class="flex justify-center">
+        <a href="innerpage.html">
+          <img class=" object-cover" src="./img/NicePng_deepam-png-images_2486138 1.png" alt="">
+        </a>
+      
+      </div>
+      <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+        <p class="text-center"> <span class="mr-5">+</span>
+            Add To Cart</p>
+      </div>
+      <div class="absolute bg-bookmark-soft-blue  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5" src="./img/love.png" alt=""></div>
+    </div>
+    <div class="mt-16">
+      <h3 class="text-2xl font-bold"><a href="innerpage.html">Table Lamp</a>
+         </h3>
+      <p class="text-xl mt-8 text-slate-400">$930.00</p>
+    </div>
+  </div>
+  <div class="row-span-2">
+    <div class="relative flex justify-center bg-bookmark-royel-sky items-center py-6.5rem group">
+      <div class="flex items-center ">
+        <a href="innerpage.html">
+          <img class=" object-cover" src="./img/kisspng-table-nightstand-light-led-lamp-modern-minimalist-table-lamp-5a96e5c54efcc1 1.png" alt="">
+        </a>
+        
+      </div>
+      <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+        <p class="text-center"> <span class="mr-5">+</span>
+            Add To Cart</p>
+      </div>
+      <div class="bg-bookmark-soft-blue w-32 h-10 flex items-center justify-center rounded-tr-md rounded-br-md absolute top-5 left-0 text-white"> 
+        <p class=" text-2xl">25% OFF</p>
+      </div>
+      <div class="absolute bg-white  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5" src="./img/love-two.png" alt=""></div>
+    </div>
+    
+    <div class="mt-16 text-center">
+      <h3 class="text-2xl font-bold"> <a href="innerpage.html">Table Lamp</a>
+         </h3>
+      <p class="text-xl mt-8 text-slate-400">$930.00</p>
+    </div>
+  </div>
+  <div class="row-span-2">
+    <div class="relative flex justify-center items-center bg-bookmark-purple py-6.5rem group">
+      <div class="flex items-center">
+        <a href="innerpage.html">
+          <img class=" object-cover" src="./img/Daco_127755 1.png" alt="">
+        </a>
+        
+      </div>
+
+      <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+        <p class="text-center"> <span class="mr-5">+</span>
+            Add To Cart</p>
+      </div>
+
+      <div class="absolute bg-white  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5" src="./img/love-two.png" alt=""></div>
+    </div>
+    <div class="mt-16 text-center">
+      <h3 class="text-2xl font-bold"><a href="innerpage.html">Table Lamp</a> </h3>
+      <p class="text-xl mt-8 text-slate-400">$930.00</p>
+    </div>
+  </div>
+</div>
+<!--------TOP TRANDING THIS WEEK-BUTTON--------> 
+<div class="flex justify-center items-center  mt-10rem">
+  <button class="border flex text-center items-center border-black text-xl px-14 py-5 font-semibold">
+    See More <span class="ml-3"> +</span></button>
+</div>
+
+ <!--------------NEW DEGISN SECTION--------------->
+ <div>
+  <div class=" flex justify-center pt-36">
+    <h1 class="text-5xl relative z-10 font-bold mb-12"><img class="absolute left-0 w-64 bottom-2 -z-10" src="./img/hedline styleVector 1.png" alt=""> New Design</h1>
+</div>
+<p class="text-2xl text-center text-bookmark-new-gray">Find a bright ideal to suit your taste</p>
+</div>
+<div class=" mx-auto container grid-cols-1 grid xl:grid-cols-2 gap-8 pt-28">
+
+  <div class="row-span-2 text-center flex items-center justify-center bg-bookmark-grey relative group">
+    <img class="object-cover w-96" src="./img/SeekPng 1 (1).png" alt="">
+    <div class="absolute opacity-0 transition-all duration-75  group-hover:opacity-100 bg-black bg-opacity-40 w-full h-full flex items-center justify-center flex-col">
+        <h3 class="text-5xl text-white mb-6  ">Portable Sofa
+          </h3>
+          
+        <span class="text-3xl text-white">$650.00</span>
+        <div class="absolute bg-white w-14 h-14 flex rounded-full justify-center items-center top-8 right-8"><img class="w-6 object-cover" src="./img/busket-Vector.png" alt=""></div>
+    </div>
+
+    </div>
+
+  <div class="relative bg-bookmark-purple col-span-1 text-center flex justify-center items-center group">
+    <img class="py-36 w-full px-12 object-cover " src="./img/2cd43b_8ae53205329c4b17912877b92a591b0f_mv2 1.png" alt="">
+    <div class="absolute opacity-0 transition-all duration-75  group-hover:opacity-100 bg-black bg-opacity-40 w-full h-full flex items-center justify-center flex-col">
+      <h3 class="text-5xl text-white mb-6  ">Portable Sofa
+        </h3>
+      <span class="text-3xl text-white">$650.00</span>
+      <div class="absolute bg-white w-14 h-14 flex rounded-full justify-center items-center top-8 right-8"><img class="w-6 object-cover" src="./img/busket-Vector.png" alt=""></div>
+  </div>
+    <div class="bg-bookmark-soft-blue w-32 h-10 flex items-center justify-center rounded-tr-md rounded-br-md absolute top-5 left-0 text-white"> 
+      <p class=" text-2xl">25% OFF</p>
+    </div>
+    </div>
+
+  <div class="grid xl:grid-cols-2 grid-cols-1 gap-8">
+    <div class="bg-bookmark-soft flex justify-center items-center relative group">
+      <img class=" mt-10 w-36 object-contain py-20" src="./img/pngwing 2.png" alt="">
+      <div class="absolute opacity-0 transition-all duration-75  group-hover:opacity-100 bg-black bg-opacity-40 w-full h-full flex items-center justify-center flex-col">
+        <h3 class="text-4xl text-white mb-6  ">Portable Sofa
+          </h3>
+          
+        <span class="text-2xl text-white">$650.00</span>
+        <div class="absolute bg-white w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5 object-cover" src="./img/busket-Vector.png" alt=""></div>
+    </div>
+      </div>
+
+     <div class=" bg-bookmark-white text-center flex justify-center items-center relative group">
+       <img class="mt-10 w-52 object-contain" src="./img/pngwing 1.png" alt="">
+       <div class="absolute opacity-0 transition-all duration-75  group-hover:opacity-100 bg-black bg-opacity-40 w-full h-full flex items-center justify-center flex-col">
+        <h3 class="text-4xl text-white mb-6  ">Portable Sofa
+          </h3>
+          
+        <span class="text-2xl text-white">$650.00</span>
+        <div class="absolute bg-white w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5 object-cover" src="./img/busket-Vector.png" alt=""></div>
+    </div>
+       </div>    
+  </div>
+</div>
+<!---------NEW-ARIVEL--------->
+ <div id="default-carousel" class="relative z-0 pt-36" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="overflow-hidden container mx-auto relative rounded-lg h-68 md:h-60vh xl:h-70vh">
+       <!-- Item 1 -->
+
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        
+        <div class="container mx-auto grid grid-cols-2 grid-flow-col">
+          <div class="bg-bookmark-soft sm:pt-24 xl:pt-48 ">
+            <h3 class="text-5xl sm:text-2xl mb-10 text-gray-400 ml-70px">New Arrival</h3>
+            <div class="relative">
+              <h1 class="xl:text-custom md:text-5xl text-3xl relative z-10 font-bold mb-10 ml-70px"><img class="absolute left-4 w-72 bottom-5 h-8 -z-10" src="./img/hedline styleVector 1.png" alt=""> Wooden Lamp</h1>
+            </div>
+            <button class="border flex text-center ml-70px items-center border-black sm:text-xl  text-2xl px-14  sm:py-4 sm:px-12 font-semibold">
+              Order Now</button>
+             
+          </div>
+          <div class="bg-bookmark-soft">
+            <img class="w-full h-full" src="./img/PngItem_2632438 1.png" alt="">
+          </div>
+        </div> 
+      
+      </div>
+      <!-- Item 2 -->
+   
+       
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        
+      <div class="container mx-auto grid grid-cols-2 grid-flow-col">
+        <div class="bg-bookmark-soft sm:pt-24 xl:pt-48 ">
+          <h3 class="text-5xl sm:text-2xl mb-10 text-gray-400 ml-70px">New Arrival</h3>
+          <div class="relative">
+            <h1 class="xl:text-custom md:text-5xl text-3xl relative z-10 font-bold mb-10 ml-70px"><img class="absolute left-4 w-72 bottom-5 h-8 -z-10" src="./img/hedline styleVector 1.png" alt=""> Wooden Lamp</h1>
+          </div>
+          <button class="border flex text-center ml-70px items-center border-black sm:text-xl  text-2xl px-14  sm:py-4 sm:px-12 font-semibold">
+            Order Now</button>
+           
+        </div>
+        <div class="bg-bookmark-soft">
+          <img class="w-full h-full" src="./img/PngItem_2632438 1.png" alt="">
+        </div>
+      </div> 
+    
+    </div>
+    <!-- Item 3 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        
+      <div class="container mx-auto grid grid-cols-2 grid-flow-col">
+        <div class="bg-bookmark-soft sm:pt-24 xl:pt-48 ">
+          <h3 class="text-5xl sm:text-2xl mb-10 text-gray-400 ml-70px">New Arrival</h3>
+          <div class="relative">
+            <h1 class="xl:text-custom md:text-5xl text-3xl relative z-10 font-bold mb-10 ml-70px"><img class="absolute left-4 w-72 bottom-5 h-8 -z-10" src="./img/hedline styleVector 1.png" alt=""> Wooden Lamp</h1>
+          </div>
+          <button class="border flex text-center ml-70px items-center border-black sm:text-xl  text-2xl px-14  sm:py-4 sm:px-12 font-semibold">
+            Order Now</button>
+           
+        </div>
+        <div class="bg-bookmark-soft">
+          <img class="w-full h-full" src="./img/PngItem_2632438 1.png" alt="">
+        </div>
+      </div> 
+    
+    </div>
+       
+
+       <!-- Slider indicators -->
+  
+  <div class="flex mr-20 gap-5 items-center absolute ml-4 left-32 z-30 -translate-x-1/2 xl:top-[80%] md:top-[36%] sm:top-[30%] ">
+    <button type="button" class="w-5 h-5 border-4 border-solid border-bookmark-blue rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button >
+    <button type="button" class="w-5 h-5 rounded-full bg-bookmark-black" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    <button type="button" class="w-5 h-5 rounded-full bg-bookmark-black " aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+</div>
+  </div>  
+</div>
+
+ <!---------------Browse Latest Arrivals--------------->
+ <div>
+  <div class=" flex justify-center pt-20">
+    <h1 class="text-5xl relative z-10 font-bold mb-12"><img class="absolute left-2 w-60 bottom-2 -z-10" src="./img/hedline styleVector 1.png" alt="">Browse Latest Arrivals</h1>
+</div>
+<p class="text-2xl text-center text-bookmark-new-gray">Find a bright ideal to suit your taste Find a bright ideal to suit your taste</p>
+</div>
+
+<div class="container mx-auto grid grid-cols-2 xl:grid-cols-3 gap-8 pt-28">
+  <!--Browse item one-->
+  <div class="row-span-2 text-center">
+    <div class="relative flex justify-center bg-bookmark-soft-gray items-center aspect-square group">
+      <div class="flex justify-center">
+        <a href="innerpage.html">
+          <img class=" object-cover" src="./img/shop/sss.png" alt="">
+        </a> 
+      </div>
+      <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+        <p class="text-center"> <span class="mr-5">+</span>
+            Add To Cart</p>
+      </div>
+      <div class="absolute bg-white  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5" src="./img/shop/Vector.png" alt=""></div>
+    </div>
+    <div class="mt-16">
+      <h3 class="text-2xl font-bold">Table Lamp</h3>
+      <p class="text-xl mt-8 text-slate-400">$930.00</p>
+    </div>
+  </div>
+  <!--Browse item two-->
+  <div class="row-span-2">
+    <div class="relative flex justify-center bg-bookmark-four items-center aspect-square group">
+      <div class="flex justify-center">
+        <a href="innerpage.html">
+          <img class=" object-cover" src="./img/shop/Untitled-1.png" alt="">
+        </a>
+       
+      </div>
+      <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+        <p class="text-center"> <span class="mr-5">+</span>
+            Add To Cart</p>
+      </div>
+     
+    </div>
+    <div class="mt-16 text-center">
+      <h3 class="text-2xl font-bold">Table Lamp</h3>
+      <p class="text-xl mt-8 text-slate-400">$930.00</p>
+    </div>
+  </div>
+  <!--Browse item three-->
+  <div class="row-span-2">
+    <div class="relative flex justify-center bg-bookmark-purple items-center aspect-square group">
+      <div class="flex items-center ">
+        <a href="innerpage.html">
+          <img class=" object-cover" src="./img/shop/dsd.png" alt="">
+        </a>
+        
+      </div>
+      <div class="bg-bookmark-soft-blue w-32 h-10 flex items-center justify-center rounded-tr-md rounded-br-md absolute top-5 left-0 text-white"> 
+        <p class=" text-2xl">SOLD</p>
+      </div>
+      <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+        <p class="text-center"> <span class="mr-5">+</span>
+            Add To Cart</p>
+      </div>
+    
+      <div class="absolute bg-white  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5" src="./img/shop/Vector.png" alt=""></div>
+    </div>
+    <div class="mt-16 text-center">
+      <h3 class="text-2xl font-bold">Table Lamp</h3>
+      <p class="text-xl mt-8 text-slate-400">$930.00</p>
+    </div>
+  </div>
+  <!--Browse item four-->
+  <div class="row-span-2">
+    <div class="relative flex justify-center items-center bg-bookmark-four  aspect-square group">
+      <div class="flex items-center">
+        <img class=" object-cover" src="./img/shop/ass.png" alt="">
+      </div>
+      <div class="bg-bookmark-soft-blue w-32 h-10 flex items-center justify-center rounded-tr-md rounded-br-md absolute top-5 left-0 text-white"> 
+        <p class=" text-2xl">SOLD</p>
+      </div>
+      <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+        <p class="text-center"> <span class="mr-5">+</span>
+            Add To Cart</p>
+      </div>
+
+      <div class="absolute bg-white  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8">
+        <a href="innerpage.html">
+          <img class="w-5" src="./img/love-two.png" alt="">
+        </a>
+       
+      </div>
+    </div>
+    <div class="mt-16 text-center">
+      <h3 class="text-2xl font-bold">Table Lamp</h3>
+      <p class="text-xl mt-8 text-slate-400">$930.00</p>
+    </div>
+  </div>
+  <!--Browse item five-->
+  <div class="row-span-2">
+    <div class="relative flex justify-center bg-bookmark-purple items-center aspect-square group">
+      <div class="flex items-center ">
+        <a href="innerpage.html">
+          <img class=" object-cover" src="./img/shop/dsd.png" alt="">
+        </a>
+        
+      </div>
+      <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+        <p class="text-center"> <span class="mr-5">+</span>
+            Add To Cart</p>
+      </div>
+    
+      <div class="absolute bg-white  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5" src="./img/shop/Vector.png" alt=""></div>
+    </div>
+    <div class="mt-16 text-center">
+      <h3 class="text-2xl font-bold">Table Lamp</h3>
+      <p class="text-xl mt-8 text-slate-400">$930.00</p>
+    </div>
+  </div>
+  <!--Browse item six-->
+  <div class="row-span-2">
+    <div class="relative flex justify-center bg-bookmark-soft-gray items-center aspect-square group">
+      <div class="flex justify-center">
+        <a href="innerpage.html">
+          <img class=" object-cover" src="./img/shop/sss.png" alt="">
+        </a> 
+      </div>
+      <div class="absolute opacity-0  bottom-0 text-white flex items-center justify-center text-2xl bg-black w-full h-28 group-hover:opacity-100 transition-all delay-75">
+        <p class="text-center"> <span class="mr-5">+</span>
+            Add To Cart</p>
+      </div>
+      <div class="absolute bg-white  w-12 h-12 flex rounded-full justify-center items-center top-8 right-8"><img class="w-5" src="./img/shop/Vector.png" alt=""></div>
+    </div>
+    <div class="mt-16 text-center">
+      <h3 class="text-2xl font-bold">Table Lamp</h3>
+      <p class="text-xl mt-8 text-slate-400">$930.00</p>
+    </div>
+  </div>
+
+</div> 
+<!--Browse button-->
+<div class="flex justify-center items-center mt-10rem">
+  <button class="border flex text-center items-center border-black text-xl px-14 py-5 font-semibold">
+    See More <span class="ml-3"> +</span></button>
+</div> 
+   <!----------------VIDEO-SECTION---------------->
+<div class="pt-36 relative">
+  <img class="w-full" src="./img/image 8.png" alt="">
+  <div class=" ">
+   <img class="w-24 object-cover absolute left-1/2 top-1/2 -translate-x-1/2 translate-y-1/4" src="./img/Group 2.png" alt="">
+  </div>
+</div>
+ <!-------------TESTMONIAL-SECTION--------------->
+ <div class="container mx-auto">
+  <div class=" flex justify-center pt-36">
+    <h1 class="text-5xl relative z-10 font-bold mb-12"><img class="absolute left-2 w-52 bottom-2 -z-10" src="./img/hedline styleVector 1.png" alt="">Testmonial</h1>
+</div>
+<p class="text-2xl text-center text-bookmark-new-gray">Find a bright ideal to suit your taste Find a bright ideal</p>
+
+<div id="default-carousel" class="relative z-0 pt-7rem" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="overflow-hidden relative h-50 rounded-lg mt-24">
+       <!-- Item 1 -->
+
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        
+        <div class="container mx-auto">
+          <div class="w-full flex justify-center">
+            <img src="./img/Ellipse 15.png" class="w-28 object-cover" alt="">
+          </div>
+          <div class=" text-center relative ">
+            <h3 class="w-full text-2xl font-bold pt-10 ">Michel Borak</h3>
+            <p class=" pt-5 pb-5 text-xl text-gray-500">Founder & CEO Swift Bank</p>
+            <p class="text-center  w-2/3 m-auto pt-6 text-new leading-[3rem] text-gray-700">“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour or randomised words which don't look even”</p>
+            <div class="w-full text-center flex justify-center mt-10">
+              <img class="w-20" src="./img/Group 3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+   
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        
+        <div class="container mx-auto">
+          <div class="w-full flex justify-center">
+            <img src="./img/Ellipse 15.png" class="w-28 object-cover" alt="">
+          </div>
+          <div class=" text-center relative ">
+            <h3 class="w-full text-2xl font-bold pt-10 ">Michel Borak</h3>
+            <p class=" pt-5 pb-5 text-xl text-gray-500">Founder & CEO Swift Bank</p>
+            <p class="text-center  w-2/3 m-auto pt-6 text-3xl text-gray-700">“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour or randomised words which don't look even”</p>
+            <div class="w-full text-center flex justify-center mt-10">
+              <img class="w-20" src="./img/Group 3.png" alt="">
+            </div>
+          
+          </div>
+        </div>
+      
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        
+        <div class="container mx-auto">
+          <div class="w-full flex justify-center">
+            <img src="./img/Ellipse 15.png" class="w-28 object-cover" alt="">
+          </div>
+          <div class=" text-center relative ">
+            <h3 class="w-full text-2xl font-bold pt-10 ">Michel Borak</h3>
+            <p class=" pt-5 pb-5 text-xl text-gray-500">Founder & CEO Swift Bank</p>
+            <p class="text-center  w-2/3 m-auto pt-6 text-3xl text-gray-700">“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour or randomised words which don't look even”</p>
+            <div class="w-full text-center flex justify-center mt-10">
+              <img class="w-20" src="./img/Group 3.png" alt="">
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      
+  </div>
+  <!-- Slider indicators -->
+  
+  <div class="flex  gap-5 flex-col items-center absolute right-0 z-30 -translate-x-1/2 top-72">
+      <button type="button" class="w-5 h-5 border-4 border-solid border-bookmark-blue  bg-white rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button >
+      <button type="button" class="w-5 h-5 rounded-full bg-bookmark-black" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-5 h-5 rounded-full bg-bookmark-black " aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+  </div>  
+</div>
+ </div>
+
+   <!-----------BRAND-SECTION---------->
+   <div class="flex flex-wrap pt-36 gap-8 justify-between items-center container mx-auto pb-36">
+    <div>
+      <img class="w-60" src="./img/Group (1).png" alt="">
+    </div>
+    <div>
+      <img class="w-52 mb-6" src="./img/Group 5.png" alt="">
+    </div>
+    <div>
+      <img class="w-64" src="./img/Group 4.png" alt="">
+    </div>
+    <div>
+      <img class="w-64" src="./img/Group.png" alt="">
+    </div>
+  </div>
+  <!--------INPUT-FIELD--------->
+  <div class="container mx-auto  text-center">
+    <form action="">
+      <input class="w-2/3 text-2xl border-2 outline-none p-7 m-auto border-gray-400 " type="email" placeholder="Enter Your Email Number">
+    </form>
+    <div class="flex justify-center items-center pt-12">
+      <button class="border flex text-center items-center border-black text-xl px-14 py-5 font-semibold">
+        Subscribe</button>
+    </div>
+  </div>
+
+
+
+   <!-------------Footer-====-------->
+   <div class="bg-black mt-16 relative"> 
+    <div class="w-full">
+      <div class="flex justify-center mb-10 ">
+        <img class=" mt-16" src="./img/logo.png" alt="">
+      </div>
+   
+      <div class="w-full block mb-16">
+         <nav class="mx-auto container relative z-10 flex items-center justify-center ">
+        
+          <div class="">
+            <ul class="hidden xl:flex relative gap-14 items-center">
+      
+              <a class="text-2xl font-bold z-10 text-bookmark-black"  href="#">Home 
+               
+             </a>
+             
+              <a class="text-2xl font-bold text-bookmark-black" href="#">Shop</a>
+             
+              <a class="text-2xl font-bold text-bookmark-black" href="#">logbook</a>
+              
+              <a class="text-2xl font-bold text-bookmark-black" href="#">page</a>
+            
+              <a class="text-2xl font-bold text-bookmark-black" href="#">content</a>
+              <div class="animation start-animation"></div>
+          
+           </ul>
+          </div>
+          <button class="block xl:hidden py-3  rounded focus:outline-none hover:bg-gray-200 group">
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+            <div class="w-7 h-1 bg-gray-600 mb-2"></div>
+         
+          </button>
+        </nav>
+     </div> 
+      <div class="text-center pb-16">
+        <ul>
+          <a class="" href=""><i class="text-3xl hover:text-white fa-brands fa-facebook text-bookmark-new-gray mr-10"></i></a>
+          <a class=" " href=""><i class="text-3xl mr-10 hover:text-white fa-brands fa-twitter text-bookmark-new-gray "></i></a>
+          <a class=" " href=""><i class="text-3xl hover:text-white mr-10 fa-brands fa-youtube text-bookmark-new-gray "></i></a>
+          <a  href=""><i class="text-3xl hover:text-white mr-10 fa-brands fa-pinterest text-bookmark-new-gray "></i></a>
+        </ul>
+      </div>
+    </div> 
+     <div class="border-t text-center ">
+      <p class="text-white opacity-40 p-10 text-2xl">Copyright 2022 all right resarved</p>
+    </div>
+    <!-----top-to buttom-->
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md  focus:outline-none focus:ring-0 transition duration-150 ease-in-out bottom-40 absolute right-16" id="btn-back-to-top">
+  <img class="w-12 " src="./img/top-bottom.png" alt="">
+  </button>
+  </div> 
+
+  <script src="https://unpkg.com/flowbite@1.4.3/dist/flowbite.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
